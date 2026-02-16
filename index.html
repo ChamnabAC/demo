@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter — Portfolio v2</title>
+    <meta
+      name="description"
+      content="Interactive modern one-page portfolio template for designers, developers, and creators."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home">ALEX.</a>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme">🌙</button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            Menu
+          </button>
+        </div>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container reveal">
+        <p class="eyebrow">Frontend Developer · UI Engineer</p>
+        <h1>I build clean, fast, and memorable digital experiences.</h1>
+        <p class="lead">
+          Portfolio template v2 adds theme switching, project filters, animated counters, and
+          scroll-based interactions to help your profile stand out.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Let’s Talk</a>
+        </div>
+      </section>
+
+      <section class="section container stats reveal" aria-label="Portfolio stats">
+        <article class="card stat-card">
+          <p class="stat-number" data-target="42">0</p>
+          <p class="stat-label">Projects shipped</p>
+        </article>
+        <article class="card stat-card">
+          <p class="stat-number" data-target="18">0</p>
+          <p class="stat-label">Happy clients</p>
+        </article>
+        <article class="card stat-card">
+          <p class="stat-number" data-target="6">0</p>
+          <p class="stat-label">Years experience</p>
+        </article>
+      </section>
+
+      <section id="about" class="section container reveal">
+        <div class="section-heading">
+          <h2>About Me</h2>
+          <p>
+            I’m Alex, a product-minded developer focused on responsive interfaces, accessibility,
+            and high-performance web applications.
+          </p>
+        </div>
+        <div class="cards two-col">
+          <article class="card">
+            <h3>Design + Code</h3>
+            <p>
+              I bridge product design and engineering to ship interfaces that are intuitive,
+              scalable, and delightful.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Collaboration</h3>
+            <p>
+              I enjoy working with cross-functional teams and translating user feedback into
+              impactful features.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal">
+        <div class="section-heading">
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="filters" role="group" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="web" type="button">Web</button>
+          <button class="filter-btn" data-filter="saas" type="button">SaaS</button>
+          <button class="filter-btn" data-filter="mobile" type="button">Mobile</button>
+        </div>
+
+        <div class="cards three-col" id="project-list">
+          <article class="card project" data-category="saas web">
+            <span class="tag">SaaS Dashboard</span>
+            <h3>Pulse Analytics</h3>
+            <p>Real-time metric tracking dashboard built with modular components and charts.</p>
+            <a href="#" aria-label="Open Pulse Analytics project">Case Study →</a>
+          </article>
+          <article class="card project" data-category="web">
+            <span class="tag">E-commerce</span>
+            <h3>Nova Storefront</h3>
+            <p>High-converting storefront with optimized performance and refined UX microcopy.</p>
+            <a href="#" aria-label="Open Nova Storefront project">Case Study →</a>
+          </article>
+          <article class="card project" data-category="mobile">
+            <span class="tag">Mobile Web App</span>
+            <h3>FitTrack Lite</h3>
+            <p>Lightweight progressive web app for workouts, hydration, and habit tracking.</p>
+            <a href="#" aria-label="Open FitTrack Lite project">Case Study →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section container reveal">
+        <div class="section-heading">
+          <h2>Skills</h2>
+        </div>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3 / Tailwind</li>
+          <li>JavaScript / TypeScript</li>
+          <li>React / Next.js</li>
+          <li>Accessibility (WCAG)</li>
+          <li>Performance Optimization</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section container contact reveal">
+        <div>
+          <h2>Let’s build something great.</h2>
+          <p>Available for freelance and full-time opportunities.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Alex Carter. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
