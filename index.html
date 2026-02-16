@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter | Portfolio</title>
+    <meta
+      name="description"
+      content="Modern portfolio template for developers, designers, and creators."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">AC</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <p class="eyebrow">Frontend Developer & UI Designer</p>
+        <h1>I craft modern digital products with clean design.</h1>
+        <p class="intro">
+          This responsive portfolio template gives you everything you need to present
+          your work, explain your services, and convert visitors into clients.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Let's Work Together</a>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Alex. I build fast, accessible, and visually refined websites for
+          startups, agencies, and founders. I combine thoughtful UX with robust
+          engineering to create experiences users remember.
+        </p>
+        <ul class="stats" role="list">
+          <li><strong>5+ Years</strong><span>Experience</span></li>
+          <li><strong>40+</strong><span>Projects Delivered</span></li>
+          <li><strong>20+</strong><span>Happy Clients</span></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <h2>Featured Projects</h2>
+          <p>Selected work blending performance, aesthetics, and user value.</p>
+        </div>
+        <div class="project-grid">
+          <article class="card">
+            <h3>NovaCommerce</h3>
+            <p>
+              E-commerce storefront redesign that increased checkout conversion by
+              32% in three months.
+            </p>
+            <a href="#">Case Study</a>
+          </article>
+          <article class="card">
+            <h3>Pulse Dashboard</h3>
+            <p>
+              Analytics dashboard for SaaS teams with custom data visualizations and
+              role-based views.
+            </p>
+            <a href="#">Case Study</a>
+          </article>
+          <article class="card">
+            <h3>Elevate Landing</h3>
+            <p>
+              High-converting marketing page built for speed, SEO, and mobile-first
+              engagement.
+            </p>
+            <a href="#">Case Study</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="section-heading">
+          <h2>Services</h2>
+          <p>Flexible engagement options for teams of any size.</p>
+        </div>
+        <div class="service-grid">
+          <article class="card">
+            <h3>Website Design</h3>
+            <p>Modern, conversion-focused interfaces tailored to your brand.</p>
+          </article>
+          <article class="card">
+            <h3>Frontend Development</h3>
+            <p>Pixel-perfect implementation with clean, maintainable code.</p>
+          </article>
+          <article class="card">
+            <h3>Performance Optimization</h3>
+            <p>Faster loading, better Core Web Vitals, and smoother UX.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Let's Build Something Great</h2>
+        <p>Tell me about your project and timeline.</p>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Project Details
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Briefly describe your project"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Alex Carter. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
