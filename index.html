@@ -3,121 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex Carter | Portfolio</title>
+    <title>Emma & Liam | Wedding Invitation</title>
     <meta
       name="description"
-      content="Modern portfolio template for developers, designers, and creators."
+      content="A romantic wedding invitation template with schedule, story, photos, venue details, and RSVP form."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
     <header class="site-header">
-      <a class="brand" href="#top">AC</a>
+      <a class="brand" href="#top">E & L</a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
         Menu
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#story">Our Story</a>
+        <a href="#moments">Photos</a>
+        <a href="#details">Details</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#rsvp">RSVP</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero section">
-        <p class="eyebrow">Frontend Developer & UI Designer</p>
-        <h1>I craft modern digital products with clean design.</h1>
+      <section class="hero section animate-on-scroll visible">
+        <p class="eyebrow">You Are Joyfully Invited</p>
+        <p class="names">Emma Rose <span>&</span> Liam Carter</p>
+        <h1>We can't wait to celebrate our wedding day with you.</h1>
         <p class="intro">
-          This responsive portfolio template gives you everything you need to present
-          your work, explain your services, and convert visitors into clients.
+          Saturday, 21 June 2026 • Rosewood Garden Estate • Napa Valley, California
         </p>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">0</strong><span>Days</span></div>
+          <div><strong id="hours">0</strong><span>Hours</span></div>
+          <div><strong id="minutes">0</strong><span>Minutes</span></div>
+        </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="#contact">Let's Work Together</a>
+          <a class="btn btn-primary" href="#rsvp">RSVP Now</a>
+          <a class="btn btn-secondary" href="#details">View Venue Details</a>
         </div>
       </section>
 
-      <section id="about" class="section about">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm Alex. I build fast, accessible, and visually refined websites for
-          startups, agencies, and founders. I combine thoughtful UX with robust
-          engineering to create experiences users remember.
-        </p>
-        <ul class="stats" role="list">
-          <li><strong>5+ Years</strong><span>Experience</span></li>
-          <li><strong>40+</strong><span>Projects Delivered</span></li>
-          <li><strong>20+</strong><span>Happy Clients</span></li>
+      <section id="story" class="section animate-on-scroll">
+        <div class="section-heading">
+          <h2>Our Story</h2>
+          <p>
+            From a chance coffee shop meeting to this beautiful milestone, every chapter
+            has been a reminder that love grows in the little moments.
+          </p>
+        </div>
+        <div class="story-grid">
+          <article class="card">
+            <h3>First Hello</h3>
+            <p>April 2019 — We met while reaching for the same book at a tiny bookstore cafe.</p>
+          </article>
+          <article class="card">
+            <h3>The Proposal</h3>
+            <p>December 2024 — A snowy evening, heartfelt vows, and a very happy "yes".</p>
+          </article>
+          <article class="card">
+            <h3>Wedding Day</h3>
+            <p>June 2026 — Surrounded by our favorite people, we begin forever together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="moments" class="section animate-on-scroll">
+        <div class="section-heading">
+          <h2>Moments We Love</h2>
+          <p>A few snapshots from our journey to forever.</p>
+        </div>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=80"
+              alt="Couple walking together in a garden"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80"
+              alt="Hands with engagement ring"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80"
+              alt="Romantic dinner table with flowers"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="details" class="section details animate-on-scroll">
+        <div class="section-heading">
+          <h2>Venue & Travel</h2>
+          <p>Everything you need to plan your day with us.</p>
+        </div>
+        <div class="detail-grid">
+          <article class="card">
+            <h3>Ceremony & Reception</h3>
+            <p>Rosewood Garden Estate, 145 Willow Lane, Napa Valley, CA.</p>
+            <p>Outdoor ceremony followed by dinner and dancing under the stars.</p>
+          </article>
+          <article class="card">
+            <h3>Dress Code</h3>
+            <p>Garden Formal — soft colors, cocktail-length or floor-length attire.</p>
+          </article>
+          <article class="card">
+            <h3>Accommodations</h3>
+            <p>A room block is reserved at The Magnolia Inn. Mention "Rose-Carter Wedding".</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="section schedule animate-on-scroll">
+        <div class="section-heading">
+          <h2>Wedding Day Schedule</h2>
+        </div>
+        <ul class="timeline" role="list">
+          <li><span>3:30 PM</span> Guests Arrive & Welcome Drinks</li>
+          <li><span>4:00 PM</span> Ceremony Begins</li>
+          <li><span>5:00 PM</span> Cocktail Hour</li>
+          <li><span>6:30 PM</span> Dinner & Toasts</li>
+          <li><span>8:00 PM</span> First Dance + Celebration</li>
         </ul>
       </section>
 
-      <section id="projects" class="section">
-        <div class="section-heading">
-          <h2>Featured Projects</h2>
-          <p>Selected work blending performance, aesthetics, and user value.</p>
-        </div>
-        <div class="project-grid">
-          <article class="card">
-            <h3>NovaCommerce</h3>
-            <p>
-              E-commerce storefront redesign that increased checkout conversion by
-              32% in three months.
-            </p>
-            <a href="#">Case Study</a>
-          </article>
-          <article class="card">
-            <h3>Pulse Dashboard</h3>
-            <p>
-              Analytics dashboard for SaaS teams with custom data visualizations and
-              role-based views.
-            </p>
-            <a href="#">Case Study</a>
-          </article>
-          <article class="card">
-            <h3>Elevate Landing</h3>
-            <p>
-              High-converting marketing page built for speed, SEO, and mobile-first
-              engagement.
-            </p>
-            <a href="#">Case Study</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="services" class="section services">
-        <div class="section-heading">
-          <h2>Services</h2>
-          <p>Flexible engagement options for teams of any size.</p>
-        </div>
-        <div class="service-grid">
-          <article class="card">
-            <h3>Website Design</h3>
-            <p>Modern, conversion-focused interfaces tailored to your brand.</p>
-          </article>
-          <article class="card">
-            <h3>Frontend Development</h3>
-            <p>Pixel-perfect implementation with clean, maintainable code.</p>
-          </article>
-          <article class="card">
-            <h3>Performance Optimization</h3>
-            <p>Faster loading, better Core Web Vitals, and smoother UX.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <h2>Let's Build Something Great</h2>
-        <p>Tell me about your project and timeline.</p>
+      <section id="rsvp" class="section rsvp animate-on-scroll">
+        <h2>Kindly RSVP by May 15, 2026</h2>
+        <p>We are so excited to celebrate with you. Please let us know your plans.</p>
         <form class="contact-form">
           <label>
-            Name
+            Full Name
             <input type="text" name="name" placeholder="Your name" required />
           </label>
           <label>
@@ -125,21 +155,24 @@
             <input type="email" name="email" placeholder="you@example.com" required />
           </label>
           <label>
-            Project Details
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Briefly describe your project"
-              required
-            ></textarea>
+            Attendance
+            <select name="attendance" required>
+              <option value="">Choose one</option>
+              <option value="joyfully-attending">Joyfully Attending</option>
+              <option value="regretfully-declining">Regretfully Declining</option>
+            </select>
           </label>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <label>
+            Dietary Notes
+            <textarea name="message" rows="4" placeholder="Any dietary preferences or notes"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send RSVP</button>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Alex Carter. All rights reserved.</p>
+      <p>With love, Emma & Liam • <span id="year"></span></p>
     </footer>
 
     <script src="script.js"></script>
